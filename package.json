@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "My personal website that shows my name and what I love to do",
   "private": true,
+  "homepage": "https://alexalannunes.github.io/alexalannunes/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
