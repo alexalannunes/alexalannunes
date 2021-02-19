@@ -2,7 +2,7 @@
 `v2.0.0`
 
 
-https://github-readme-stats.vercel.app/api?username=alexalannunes&show_icons=true&hide_border=true&theme=dark
+<img src="https://github-readme-stats.vercel.app/api?username=alexalannunes&show_icons=true&hide_border=true&theme=dark />
 
 
 https://alexalannunes.github.io/alexalannunes/
