@@ -2,7 +2,8 @@
 `v2.0.0`
 
 
-<img src="https://github-readme-stats.vercel.app/api?username=alexalannunes&show_icons=true&hide_border=true&theme=dark />
+
+<img alt="Alex Alan Nunes's Github Stats" src="https://github-readme-stats.vercel.app/api?username=alexalannunes&show_icons=true&hide_border=true&theme=dark" />
 
 
 https://alexalannunes.github.io/alexalannunes/
