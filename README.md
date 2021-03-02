@@ -12,8 +12,8 @@ https://alexalannunes.github.io/alexalannunes/
 
 This is my personal PWA (made in React) that shows my name and what I love to do :heart:
 
-I the future, this PWA will be my portifolio with be my projcts.
+I the future, this PWA will be my portifolio with my projcts.
 
-I have many projects but none are linked in pwa yet! :smile:
+I have many projects but no one are linked in pwa yet! :smile:
 
 This can be used as pwa template.
