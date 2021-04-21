@@ -6,7 +6,7 @@ function App() {
     <div className="content-app">
       <div className="content-image">
         <div className="arrow">
-          <img src={me} alt="Alex Alan Nunes" />
+          <img src={me} style={{ width: "300px", height: "300px", objectFit: "cover" }} alt="Alex Alan Nunes" />
         </div>
       </div>
       <div className="content-info">
