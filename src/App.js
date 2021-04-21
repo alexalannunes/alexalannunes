@@ -1,5 +1,5 @@
 import React from "react";
-import me from "./assets/alexalannunes.jpg";
+import me from "./assets/20210415_114006.jpg.jpg";
 
 function App() {
   return (
