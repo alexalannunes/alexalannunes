@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=alexalannunes&label=Profile%20views&color=0e75b6&style=flat" alt="alexalannunes" /> </p>
 
-- 🔭 I’m currently working on [Mini-Weather](https://mini-weather-rosy.vercel.app/), [ordered-animated-list](https://github.com/alexalannunes/ordered-animated-list)
+- 🔭 I’m currently working on [Mini-Weather](https://mini-weather-rosy.vercel.app/), [ordered-animated-list](https://github.com/alexalannunes/ordered-animated-list), [UI-Clones](https://github.com/alexalannunes/ui-clones)
 
 - 🌱 I’m currently learning **docker, typescript**
 
