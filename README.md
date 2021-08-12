@@ -11,6 +11,11 @@
 
 - 📫 How to reach me **alexnaoquero@gmail.com**
 
+
+
+<img src="alexalannunes.svg" />
+          
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://codepen.io/alexalannunes" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/neutral-icons/src/images/icons/Social/codepen.svg" alt="alexalannunes" height="30" width="40" /></a>
