@@ -9,7 +9,7 @@
 
 - 👯 I’m looking to collaborate on [Maskable.app](https://maskable.app/)
 
-- 📫 How to reach me **alexnaoquero@gmail.com**
+- 📫 How to reach me **alexalannunes@gmail.com**
 
 
 
