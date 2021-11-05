@@ -65,9 +65,9 @@ export default function Home() {
             <code className={styles.code}>
               <span className={styles.codeFunctionName}>welcome</span>
               <span className={styles.codeParentheses}>(</span>
-              <span className={styles.codeString}>"</span>
+              <span className={styles.codeString}>&quot;</span>
               <span>👋</span>
-              <span className={styles.codeString}>"</span>
+              <span className={styles.codeString}>&quot;</span>
               <span className={styles.codeParentheses}>)</span>
               <span className={styles.codeWhite}>;</span>
             </code>
