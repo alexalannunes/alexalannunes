@@ -32,8 +32,8 @@
 <a  href="https://instagram.com/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
 <a  href="https://dribbble.com/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/dribbble.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
 <a  href="https://www.behance.net/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/behance.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
-<a  href="https://medium.com/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/medium.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
-<a  href="https://www.youtube.com/c/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
+<a  href="https://medium.com/@alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/medium.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
+<a  href="https://www.youtube.com/channel/UC_Dt6XtAfVgYNzd1iMH56Aw"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
 </p>
 
   
