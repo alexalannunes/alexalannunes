@@ -50,7 +50,7 @@ export default function Home() {
         <div className={styles.myImageContainer}>
           <Image
             className={styles.myImage}
-            src="/images/20210415_114006.jpg"
+            src="/images/eu-square.jpeg"
             alt="Alex Alan Nunes"
             width={100}
             height={100}
