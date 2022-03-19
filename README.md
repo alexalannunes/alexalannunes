@@ -18,23 +18,7 @@
 
 <p  align="left">
 <a  href="https://codepen.io/alexalannunes"  target="blank">
-<img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codepen.svg"  alt="alexalannunes"  height="30"  width="40" />
-</a>
-<a  href="https://dev.to/alexalannunes"  target="blank">
-<img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg"  alt="alexalannunes"  height="30"  width="40" />
-</a>
-<a  href="https://twitter.com/alexalannunes"  target="blank">
-<img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg"  alt="alexalannunes"  height="30"  width="40" />
-</a>
-<a  href="https://linkedin.com/in/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
-<a  href="https://codesandbox.com/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
-<a  href="https://fb.com/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
-<a  href="https://instagram.com/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
-<a  href="https://dribbble.com/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/dribbble.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
-<a  href="https://www.behance.net/alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/behance.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
-<a  href="https://medium.com/@alexalannunes"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/medium.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
-<a  href="https://www.youtube.com/channel/UC_Dt6XtAfVgYNzd1iMH56Aw"  target="blank"><img  align="center"  src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg"  alt="alexalannunes"  height="30"  width="40" /></a>
-</p>
+
 
 
 <p>
