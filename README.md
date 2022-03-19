@@ -12,7 +12,7 @@
 - 📫 How to reach me **alexalannunes@gmail.com**
 
  
-[![TypeScript](https://img.shields.io/badge/-TypeScript-1967d2?style=flat-square&logo=typescript&logoColor=white)](https://typescriptlang.org/)
+&nbsp;&nbsp;&nbsp;&nbsp;[![TypeScript](https://img.shields.io/badge/-TypeScript-1967d2?style=flat-square&logo=typescript&logoColor=white)](https://typescriptlang.org/)
 [![React](https://img.shields.io/badge/-React-1967d2?style=flat-square&logo=react&logoColor=white)](https://pt-br.reactjs.org/)
 [![Angular](https://img.shields.io/badge/-Angular-1967d2?style=flat-square&logo=angular&logoColor=white)](https://angular.io/)
 [![Redux](https://img.shields.io/badge/-Redux-1967d2?style=flat-square&logo=redux&logoColor=white)](https://redux.js.org/)
@@ -24,9 +24,4 @@
 [![GitHub](https://img.shields.io/badge/-GitHub-1967d2?style=flat-square&logo=github&logoColor=white)](https://github.com/)
 [![Jira](https://img.shields.io/badge/-Jira-1967d2?style=flat-square&logo=jira&logoColor=white)](https://www.atlassian.com/br/software/jira)
 
-<p>
-  
-  
-  <img  align="center"  src="https://github-readme-stats.vercel.app/api?username=alexalannunes&show_icons=true&locale=en"  alt="alexalannunes" />
-
-</p>
+&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=alexalannunes&show_icons=true&locale=en"  alt="alexalannunes" />
