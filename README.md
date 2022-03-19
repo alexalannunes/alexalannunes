@@ -6,7 +6,11 @@
 
 <p  align="left"> &nbsp;&nbsp;&nbsp;&nbsp;<img  src="https://komarev.com/ghpvc/?username=alexalannunes&label=Profile%20views&color=0e75b6&style=flat"  alt="alexalannunes" /> </p>
 
-- 🔭 I’m currently working on [Mini-Weather](https://mini-weather-rosy.vercel.app/), [UI-Clones](https://github.com/alexalannunes/ui-clones), [React Firebase Todo](https://github.com/alexalannunes/react-todo-firebase), [React Timer](https://github.com/alexalannunes/react-timer-pwa), [Recoil TodoList](https://github.com/alexalannunes/react-recoil-todolist)
+- 🔭 I’m currently working on 
+  -  [Mini-Weather](https://mini-weather-rosy.vercel.app/)
+  -  [UI-Clones](https://github.com/alexalannunes/ui-clones)
+  -  [React Timer](https://github.com/alexalannunes/react-timer-pwa)
+  -  [Recoil TodoList](https://github.com/alexalannunes/react-recoil-todolist)
 - 🌱 I’m currently learning **React**, **Docker, TypeScript**, **Angular**, **Node.js**
 - 👯 I’m looking to collaborate on [Maskable.app](https://maskable.app/)
 - 📫 How to reach me **alexalannunes@gmail.com**
