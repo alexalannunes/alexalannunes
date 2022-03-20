@@ -6,7 +6,7 @@
 
 <br />
 
-<div style="display:flex;align-items:center;gap:10px;justify-content:center">
+<div style="display:flex;align-items:center;gap:10px;justify-content:center" align="center">
   <a target="_blank" href="https://www.linkedin.com/in/alexalannunes/">
     <img src=".github/linkedin_icon_rounded.png" width="26" />
   </a>
