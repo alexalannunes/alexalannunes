@@ -4,27 +4,30 @@
 
 <h3  align="center">A passionate frontend developer from Brazil</h3>
 
-<p  align="left"> &nbsp;&nbsp;&nbsp;&nbsp;<img  src="https://komarev.com/ghpvc/?username=alexalannunes&label=Profile%20views&color=0e75b6&style=flat"  alt="alexalannunes" /> </p>
+<br />
 
-
-### &nbsp;&nbsp;&nbsp;&nbsp;Find me
-<div style="display:flex;align-items:center;gap:10px;marfin-left:60px">
+<div style="display:flex;align-items:center;gap:10px;justify-content:center">
   <a target="_blank" href="https://www.linkedin.com/in/alexalannunes/">
-    <img src=".github/linkedin_icon_rounded.png" width="22" />
+    <img src=".github/linkedin_icon_rounded.png" width="26" />
   </a>
   <a target="_blank" href="https://www.facebook.com/alexalannunes">
-    <img src=".github/facebook_icon_rounded.png" width="22" />
+    <img src=".github/facebook_icon_rounded.png" width="26" />
   </a>
   <a target="_blank" href="https://twitter.com/alexalannunes">
-    <img src=".github/twitter_icon_rounded.png" width="22" />
+    <img src=".github/twitter_icon_rounded.png" width="26" />
   </a>
   <a target="_blank" href="https://www.instagram.com/alexalannunes/">
-    <img src=".github/instagram_icon_rounded.png" width="22" />
+    <img src=".github/instagram_icon_rounded.png" width="26" />
   </a>
   <a target="_blank" href="https://dribbble.com/alexalannunes">
-    <img src=".github/dribbble_icon_rounded.png" width="22" />
+    <img src=".github/dribbble_icon_rounded.png" width="26" />
   </a>
 </div>
+
+<br />
+
+<p  align="left"> &nbsp;&nbsp;&nbsp;&nbsp;<img  src="https://komarev.com/ghpvc/?username=alexalannunes&label=Profile%20views&color=0e75b6&style=flat"  alt="alexalannunes" /> </p>
+
 
 <br />
 
