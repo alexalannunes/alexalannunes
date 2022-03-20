@@ -9,19 +9,19 @@
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;Find me
 <div style="display:flex;align-items:center;gap:10px;marfin-left:60px">
-  <a target="_blank" hre="https://www.linkedin.com/in/alexalannunes/">
+  <a target="_blank" href="https://www.linkedin.com/in/alexalannunes/">
     <img src=".github/linkedin_icon_rounded.png" width="22" />
   </a>
-  <a target="_blank" hre="https://www.facebook.com/alexalannunes">
+  <a target="_blank" href="https://www.facebook.com/alexalannunes">
     <img src=".github/facebook_icon_rounded.png" width="22" />
   </a>
-  <a target="_blank" hre="https://twitter.com/alexalannunes">
+  <a target="_blank" href="https://twitter.com/alexalannunes">
     <img src=".github/twitter_icon_rounded.png" width="22" />
   </a>
-  <a target="_blank" hre="https://www.instagram.com/alexalannunes/">
+  <a target="_blank" href="https://www.instagram.com/alexalannunes/">
     <img src=".github/instagram_icon_rounded.png" width="22" />
   </a>
-  <a target="_blank" hre="https://dribbble.com/alexalannunes">
+  <a target="_blank" href="https://dribbble.com/alexalannunes">
     <img src=".github/dribbble_icon_rounded.png" width="22" />
   </a>
 </div>
