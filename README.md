@@ -6,6 +6,28 @@
 
 <p  align="left"> &nbsp;&nbsp;&nbsp;&nbsp;<img  src="https://komarev.com/ghpvc/?username=alexalannunes&label=Profile%20views&color=0e75b6&style=flat"  alt="alexalannunes" /> </p>
 
+
+### &nbsp;&nbsp;&nbsp;&nbsp;Find me
+<div style="display:flex;align-items:center;gap:10px;marfin-left:60px">
+  <a target="_blank" hre="https://www.linkedin.com/in/alexalannunes/">
+    <img src=".github/linkedin_icon_rounded.png" width="22" />
+  </a>
+  <a target="_blank" hre="https://www.facebook.com/alexalannunes">
+    <img src=".github/facebook_icon_rounded.png" width="22" />
+  </a>
+  <a target="_blank" hre="https://twitter.com/alexalannunes">
+    <img src=".github/twitter_icon_rounded.png" width="22" />
+  </a>
+  <a target="_blank" hre="https://www.instagram.com/alexalannunes/">
+    <img src=".github/instagram_icon_rounded.png" width="22" />
+  </a>
+  <a target="_blank" hre="https://dribbble.com/alexalannunes">
+    <img src=".github/dribbble_icon_rounded.png" width="22" />
+  </a>
+</div>
+
+<br />
+
 - 🔭 I’m currently working on 
   -  [Mini-Weather](https://mini-weather-rosy.vercel.app/)
   -  [UI-Clones](https://github.com/alexalannunes/ui-clones)
