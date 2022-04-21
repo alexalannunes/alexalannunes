@@ -31,7 +31,8 @@
 
 <br />
 
-- 🔭 I’m currently working on 
+- 🔭 I’m currently working on
+  -  [Spotify Web API](https://github.com/alexalannunes/react-spotify-api-example)
   -  [Mini-Weather](https://mini-weather-rosy.vercel.app/)
   -  [UI-Clones](https://github.com/alexalannunes/ui-clones)
   -  [React Timer](https://github.com/alexalannunes/react-timer-pwa)
