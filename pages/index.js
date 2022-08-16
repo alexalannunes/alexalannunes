@@ -26,6 +26,10 @@ export default function Home() {
         <title>Alex Alan Nunes</title>
         <meta name="description" content="My simple resume" />
         <meta
+          name="google-site-verification"
+          content="aEdmSv4Liad52ujAs70aLu_5IVpNmPWCcRTuAj34SjQ"
+        />
+        <meta
           name="theme-color"
           content={darkModeActive ? "#252526" : "#ffffff"}
         />
