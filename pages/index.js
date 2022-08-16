@@ -33,7 +33,14 @@ export default function Home() {
           name="theme-color"
           content={darkModeActive ? "#252526" : "#ffffff"}
         />
-
+        <meta property="og:title" content="Alex Alan Nunes" />
+        <meta property="og:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1563" />
+        <meta property="og:image:height" content="1600" />
+        <meta
+          property="og:image"
+          content="https://alexalannunes.vercel.app/images/eu-square.jpeg"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
