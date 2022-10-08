@@ -23,7 +23,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-body {
+.__app {
   background: var(--theme-background);
 }
 
@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 
-body.dark {
+.__app.dark {
   --theme-background: #252526;
   --theme-foreground: #ffffff;
   --theme-code-background: #525255;
