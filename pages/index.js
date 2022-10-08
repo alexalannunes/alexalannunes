@@ -9,22 +9,18 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const { switchToDarkMode, switchToLightMode, darkModeActive } = useDarkMode();
-  const [isLight, setIsLight] = useState(!darkModeActive);
 
-  useEffect(() => {
-    document.body.className = darkModeActive ? "dark" : "";
-  }, [darkModeActive]);
-
-  const tes = (event) => {
+  const toogleMode = (event) => {
     event.target.checked ? switchToLightMode() : switchToDarkMode();
-    setIsLight(event.target.checked);
   };
 
+  const isDarkClass = darkModeActive ? "dark" : "";
+
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} __app ${isDarkClass}`}>
       <Head>
         <title>Alex Alan Nunes</title>
-        <meta name="description" content="My simple resume" />
+        <meta name="description" content="Alex Alan Nunes' resume" />
         <meta
           name="google-site-verification"
           content="aEdmSv4Liad52ujAs70aLu_5IVpNmPWCcRTuAj34SjQ"
@@ -49,10 +45,10 @@ export default function Home() {
           <label id="switch" className="switch">
             <input
               type="checkbox"
-              onChange={tes}
+              onChange={toogleMode}
               id="slider"
-              data-checked={isLight}
-              checked={isLight}
+              data-checked={!darkModeActive}
+              checked={!darkModeActive}
             />
             <span className="slider round"></span>
           </label>
