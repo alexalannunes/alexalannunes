@@ -1,16 +1,16 @@
 import { useDarkMode } from "next-dark-mode";
 import Head from "next/head";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import styles from "../styles/Home.module.css";
-
-// refs
-// https://github.com/xeoneux/next-dark-mode
 
 export default function Home() {
   const { switchToDarkMode, switchToLightMode, darkModeActive } = useDarkMode();
 
   const toogleMode = (event) => {
+    gtag("event", "toggle_theme", {
+      event_label: "Toggle Theme",
+      event_category: "theme",
+    });
     event.target.checked ? switchToLightMode() : switchToDarkMode();
   };
 
