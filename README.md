@@ -33,7 +33,6 @@
 
 - 🔭 I’m currently working on
   -  [Supa Shadows](https://github.com/alexalannunes/supa-shadows)
-  -  [Spotify Web API](https://github.com/alexalannunes/react-spotify-api-example)
   -  [Mini-Weather](https://mini-weather-rosy.vercel.app/)
   -  [UI-Clones](https://github.com/alexalannunes/ui-clones)
   -  [React Timer](https://github.com/alexalannunes/react-timer-pwa)
