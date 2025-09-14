@@ -32,6 +32,7 @@
 <br />
 
 - 🔭 I’m currently working on
+  -  [use-selectable](https://github.com/alexalannunes/use-selectable)
   -  [Business Card](https://github.com/alexalannunes/business-card)
   -  [Supa Shadows](https://github.com/alexalannunes/supa-shadows)
   -  [Supa Colors](https://github.com/alexalannunes/supa-colors)
