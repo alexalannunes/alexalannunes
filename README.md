@@ -32,13 +32,12 @@
 <br />
 
 - 🔭 I’m currently working on
+  -  [use-deletable](https://github.com/alexalannunes/use-deletable)
   -  [use-selectable](https://github.com/alexalannunes/use-selectable)
   -  [Business Card](https://github.com/alexalannunes/business-card)
   -  [Supa Shadows](https://github.com/alexalannunes/supa-shadows)
   -  [Supa Colors](https://github.com/alexalannunes/supa-colors)
   -  [Tmp-mail](https://github.com/alexalannunes/tmp-mail)
-  -  [Mini-Weather](https://mini-weather-rosy.vercel.app/)
-  -  [React Timer](https://github.com/alexalannunes/react-timer-pwa)
 - 🌱 I’m currently learning **React**, **Docker, TypeScript**, **Angular**, **Node.js**
 - 👯 I’m looking to collaborate on [Maskable.app](https://maskable.app/), [overreacted.io](https://github.com/gaearon/overreacted.io)
 - 📫 How to reach me **alexalannunes@gmail.com**
