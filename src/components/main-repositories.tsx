@@ -8,7 +8,46 @@ export function MainRepositories() {
   };
 
   return (
-    <div className="grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3">
+    <div className="grid text-center sm:grid-cols-2 lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3">
+      <a
+        href="https://github.com/alexalannunes/use-selectable"
+        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => handleEventGA("use-selectable")}
+      >
+        <h2 className="mb-3 text-2xl font-semibold">use-selectable</h2>
+        <p className="m-0 text-sm text-center opacity-50">
+          React hook for item selection
+        </p>
+      </a>
+
+      <a
+        href="https://github.com/alexalannunes/use-deletable"
+        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => handleEventGA("use-deletable")}
+      >
+        <h2 className="mb-3 text-2xl font-semibold">use-deletable</h2>
+        <p className="m-0 text-sm text-center opacity-50">
+          A simple React hook to manage item deletion confirmation.
+        </p>
+      </a>
+
+      <a
+        href="https://github.com/alexalannunes/business-card"
+        className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => handleEventGA("business-card")}
+      >
+        <h2 className="mb-3 text-2xl font-semibold">business-card</h2>
+        <p className="m-0 text-sm text-center opacity-50">
+          generate dev business card
+        </p>
+      </a>
+
       <a
         href="https://supa-shadows.vercel.app?utm_source=alexalannunes_site"
         className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
