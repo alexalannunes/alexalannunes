@@ -5,7 +5,7 @@ export function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname;
 
   if (pathname === "/redirect-to-corpodemae") {
-    return NextResponse.redirect("https://corpodemae.com", 302);
+    return NextResponse.redirect("https://www.corpodemae.com", 308);
   }
 
   return NextResponse.next();
