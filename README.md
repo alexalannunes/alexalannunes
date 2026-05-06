@@ -33,4 +33,3 @@
 
 💬 _Let’s connect, collaborate, or just geek out about space and science!_
 
-&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://github-readme-stats.vercel.app/api?username=alexalannunes&show_icons=true&locale=en"  alt="alexalannunes" />
