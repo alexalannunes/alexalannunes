@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Alex Alan Nunes",
   description: "Alex Alan Nunes' resume",
+  alternates: {
+    canonical: "https://alexalannunes.com",
+  },
   openGraph: {
     type: "profile",
     title: "Alex Alan Nunes",
