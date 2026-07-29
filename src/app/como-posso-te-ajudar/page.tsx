@@ -55,6 +55,7 @@ const CASES = [
     description:
       "Página com serviços, horário, localização e WhatsApp. Feita pra quem procura 'oficina perto de mim' no Google.",
     href: "/oficinas",
+    img: "/oficina/hero.png",
     gradient: "from-blue-500 to-indigo-600",
   },
   {
@@ -62,6 +63,7 @@ const CASES = [
     description:
       "Página que transmite confiança, com especialidades e um caminho simples pra agendar a primeira consulta.",
     href: "/psicologos",
+    img: "",
     gradient: "from-purple-500 to-pink-600",
   },
 ] as const;
@@ -257,7 +259,8 @@ export default function ComoPossoTeAjudar() {
                   className="block"
                 >
                   <div
-                    className={`flex h-44 items-center justify-center bg-gradient-to-br ${c.gradient} sm:h-48`}
+                    className={`flex h-44 items-center justify-center bg-cover bg-center sm:h-48 ${c.img ? "" : `bg-gradient-to-br ${c.gradient}`}`}
+                    style={c.img ? { backgroundImage: `url(${c.img})` } : undefined}
                   >
                     <span className="rounded-xl bg-white/90 px-5 py-2 text-lg font-bold text-gray-800">
                       {c.title}

@@ -643,7 +643,7 @@ export default function Oficinas() {
                 </div>
               </div>
               <a
-                href="https://www.google.com/maps/place/Google+S%C3%A3o+Paulo/@-23.587516,-46.6832722,539"
+                href="https://www.google.com/maps/place/Av.+Brigadeiro+Faria+Lima,+3477,+Itaim+Bibi,+S%C3%A3o+Paulo,+SP/@-23.587516,-46.6832722,17z"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-sm border border-red-600 px-5 py-3 text-sm font-bold text-red-600 transition-all hover:bg-red-600 hover:text-white"
