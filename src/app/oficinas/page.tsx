@@ -216,7 +216,7 @@ export default function Oficinas() {
             <br />
             <span className="text-red-400">São Jorge</span>
           </h1>
-          <p className="mx-auto mb-10 max-w-xl text-base text-red-100/80 sm:text-lg">
+          <p className="mx-auto mb-10 max-w-xl text-base text-white/80 sm:text-lg">
             Mecânica geral e elétrica automotiva em Pereiro, CE. Carros e motos.
             Orçamento sem compromisso. Atendimento rápido e transparente.
           </p>
