@@ -673,7 +673,7 @@ export default function Oficinas() {
           <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
             Seu carro merece um mecânico de confiança
           </h2>
-          <p className="mb-10 text-base text-red-200/70">
+          <p className="mb-10 text-base text-white/70">
             Não deixe seu carro na mão de qualquer um. Fala com a gente no
             WhatsApp e a gente resolve.
           </p>
