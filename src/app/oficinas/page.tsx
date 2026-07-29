@@ -124,12 +124,12 @@ const HORARIOS = [
 
 const GALERIA = [
   {
-    src: "/oficina/hero.png",
+    src: "/oficina/hero.jpg",
     alt: "Fachada da oficina",
     legenda: "Fachada da Auto Mecânica São Jorge",
   },
   {
-    src: "/oficina/por-dentro.jpeg",
+    src: "/oficina/por-dentro.jpg",
     alt: "Área interna",
     legenda: "Área interna ampla e equipada",
   },
@@ -144,7 +144,7 @@ const GALERIA = [
     legenda: "Atendemos carros e motos",
   },
   {
-    src: "/oficina/scanner-automativo.png",
+    src: "/oficina/scanner-automativo.jpg",
     alt: "Scanner automotivo",
     legenda: "Diagnóstico eletrônico de precisão",
   },
@@ -186,7 +186,7 @@ export default function Oficinas() {
       <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden bg-slate-900">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url(/oficina/hero.png)" }}
+          style={{ backgroundImage: "url(/oficina/hero.jpg)" }}
         >
           <div className="absolute inset-0 bg-slate-900/80" />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
