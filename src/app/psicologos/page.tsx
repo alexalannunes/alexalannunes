@@ -33,7 +33,7 @@ const FAQ_DATA = [
 
 const BENEFITS = [
   {
-    src: "/psicologa/beneficio-01.webp",
+    src: "/psicologa/beneficio-01.jpg",
     title: "Flexibilidade de horários",
     desc: "Marque sessões em horários que encaixam na sua rotina, sem precisar se deslocar.",
   },
