@@ -43,7 +43,7 @@ const BENEFITS = [
     desc: "Fale do seu próprio sofá, num ambiente que você já conhece e onde se sente segura.",
   },
   {
-    src: "/psicologa/beneficio-03.jpeg",
+    src: "/psicologa/beneficio-03.jpg",
     title: "Continuidade e consistência",
     desc: "Mesmo em viagens ou mudanças, seu tratamento continua sem interrupções.",
   },
@@ -191,7 +191,7 @@ export default function Psicologos() {
           <div className="flex flex-col gap-10 md:flex-row md:items-center">
             <div className="aspect-[4/5] w-full overflow-hidden rounded-[20px_300px_20px_400px] md:w-5/12">
               <img
-                src="/psicologa/servicos.jpeg"
+                src="/psicologa/servicos.jpg"
                 alt="Ana Fernandes psicóloga"
                 className="h-full w-full object-cover"
               />
@@ -283,14 +283,14 @@ export default function Psicologos() {
             <div className="flex flex-col gap-4 md:w-5/12">
               <div className="aspect-[4/5] w-full overflow-hidden rounded-[300px_20px_400px_20px]">
                 <img
-                  src="/psicologa/sobre-01.jpeg"
+                  src="/psicologa/sobre-01.jpg"
                   alt="Ana Fernandes psicóloga"
                   className="h-full w-full object-cover object-top"
                 />
               </div>
               <div className="aspect-[16/9] w-full overflow-hidden rounded-[20px_400px_20px_300px]">
                 <img
-                  src="/psicologa/sobre-02.jpeg"
+                  src="/psicologa/sobre-02.jpg"
                   alt="Ana Fernandes psicóloga"
                   className="h-full w-full object-cover object-top"
                 />
