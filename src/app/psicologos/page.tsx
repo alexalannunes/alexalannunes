@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Leaf, Menu, X, ChevronDown, MapPin, Monitor, Send } from "lucide-react";
+import { FadeUp, Stagger, StaggerItem } from "@/components/animations";
 
 const NAV_ITEMS = [
   { label: "Psicoterapia", href: "#servicos" },
@@ -135,7 +136,7 @@ export default function Psicologos() {
           <img
             src="/psicologa/hero.jpg"
             alt="Ana Fernandes psicóloga"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-[position:center_30%]"
           />
           <div className="absolute inset-0 bg-black/50" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
@@ -159,29 +160,35 @@ export default function Psicologos() {
       {/* ===== AUTOESTIMA CARDS ===== */}
       <section className="bg-[#FAF8F5] px-5 py-20 sm:px-6 sm:py-28">
         <div className="mx-auto max-w-5xl">
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-              <h3 className="mb-2 font-serif text-xl font-bold text-[#7A8B6B]">Autoestima</h3>
-              <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-[#C9A96E]">O QUE É?</p>
-              <p className="text-sm leading-relaxed text-[#5C5C5C]">
-                Autoestima é a percepção que você tem de si mesma. Não é sobre se achar perfeita, mas sobre se enxergar com carinho, reconhecer seu valor e se tratar com respeito — inclusive quando erra.
-              </p>
-            </div>
-            <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-              <h3 className="mb-2 font-serif text-xl font-bold text-[#7A8B6B]">Autoestima e Relacionamentos</h3>
-              <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-[#C9A96E]">COMO A AUTOESTIMA IMPACTA A SUA VIDA?</p>
-              <p className="text-sm leading-relaxed text-[#5C5C5C]">
-                A forma como você se vê influencia tudo: as relações que escolhe, os limites que impõe, o que aceita e o que não aceita. Uma autoestima frágil te coloca em situações que te diminuem.
-              </p>
-            </div>
-            <div className="rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
-              <h3 className="mb-2 font-serif text-xl font-bold text-[#7A8B6B]">Psicoterapia e Autoestima</h3>
-              <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-[#C9A96E]">A PSICOTERAPIA É O CAMINHO PARA...</p>
-              <p className="text-sm leading-relaxed text-[#5C5C5C]">
-                ...ressignificar sua história, silenciar a voz crítica e construir uma relação mais amorosa com você mesma. A terapia te ajuda a descobrir quem você é fora das expectativas dos outros.
-              </p>
-            </div>
-          </div>
+          <Stagger className="grid gap-6 md:grid-cols-3">
+            <StaggerItem>
+              <div className="h-full rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
+                <h3 className="mb-2 font-serif text-xl font-bold text-[#7A8B6B]">Autoestima</h3>
+                <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-[#C9A96E]">O QUE É?</p>
+                <p className="text-sm leading-relaxed text-[#5C5C5C]">
+                  Autoestima é a percepção que você tem de si mesma. Não é sobre se achar perfeita, mas sobre se enxergar com carinho, reconhecer seu valor e se tratar com respeito — inclusive quando erra.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="h-full rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
+                <h3 className="mb-2 font-serif text-xl font-bold text-[#7A8B6B]">Autoestima e Relacionamentos</h3>
+                <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-[#C9A96E]">COMO A AUTOESTIMA IMPACTA A SUA VIDA?</p>
+                <p className="text-sm leading-relaxed text-[#5C5C5C]">
+                  A forma como você se vê influencia tudo: as relações que escolhe, os limites que impõe, o que aceita e o que não aceita. Uma autoestima frágil te coloca em situações que te diminuem.
+                </p>
+              </div>
+            </StaggerItem>
+            <StaggerItem>
+              <div className="h-full rounded-2xl bg-white p-8 shadow-sm transition-shadow hover:shadow-md">
+                <h3 className="mb-2 font-serif text-xl font-bold text-[#7A8B6B]">Psicoterapia e Autoestima</h3>
+                <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-[#C9A96E]">A PSICOTERAPIA É O CAMINHO PARA...</p>
+                <p className="text-sm leading-relaxed text-[#5C5C5C]">
+                  ...ressignificar sua história, silenciar a voz crítica e construir uma relação mais amorosa com você mesma. A terapia te ajuda a descobrir quem você é fora das expectativas dos outros.
+                </p>
+              </div>
+            </StaggerItem>
+          </Stagger>
         </div>
       </section>
 
@@ -189,14 +196,14 @@ export default function Psicologos() {
       <section id="servicos" className="bg-white px-5 py-20 sm:px-6 sm:py-28">
         <div className="mx-auto max-w-5xl">
           <div className="flex flex-col gap-10 md:flex-row md:items-center">
-            <div className="aspect-[4/5] w-full overflow-hidden rounded-[20px_300px_20px_400px] md:w-5/12">
+            <FadeUp className="aspect-[4/5] w-full overflow-hidden rounded-[20px_300px_20px_400px] md:w-5/12">
               <img
                 src="/psicologa/servicos.jpg"
                 alt="Ana Fernandes psicóloga"
                 className="h-full w-full object-cover"
               />
-            </div>
-            <div className="md:w-7/12">
+            </FadeUp>
+            <FadeUp delay={0.15} className="md:w-7/12">
               <h2 className="font-serif text-3xl font-bold leading-tight sm:text-4xl">
                 Psicoterapia Individual — Adultos a partir dos 18 anos
               </h2>
@@ -230,7 +237,7 @@ export default function Psicologos() {
                   <p className="text-xs text-[#5C5C5C]">Pereiro, CE</p>
                 </div>
               </div>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -238,28 +245,32 @@ export default function Psicologos() {
       {/* ===== COMO A PSICOTERAPIA PODE TE AJUDAR? ===== */}
       <section className="bg-[#7A8B6B] px-5 py-20 text-center sm:py-24">
         <div className="mx-auto max-w-2xl">
-          <h2 className="font-serif text-3xl font-bold text-white sm:text-4xl">
-            Como a psicoterapia pode te ajudar?
-          </h2>
-          <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-lg">
-            A psicoterapia não é só pra quem está sofrendo. É pra quem quer se conhecer melhor, sair do automático, melhorar seus relacionamentos e viver com mais sentido. É um espaço que é só seu — pra ouvir o que você realmente sente.
-          </p>
-          <a
-            href="#contato"
-            className="mt-8 inline-block rounded-full bg-[#C9A96E] px-10 py-4 text-sm font-bold tracking-widest text-white transition-all hover:bg-[#B8944A] hover:shadow-xl hover:scale-105"
-          >
-            AGENDE SEU HORÁRIO
-          </a>
+          <FadeUp>
+            <h2 className="font-serif text-3xl font-bold text-white sm:text-4xl">
+              Como a psicoterapia pode te ajudar?
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-white/85 sm:text-lg">
+              A psicoterapia não é só pra quem está sofrendo. É pra quem quer se conhecer melhor, sair do automático, melhorar seus relacionamentos e viver com mais sentido. É um espaço que é só seu — pra ouvir o que você realmente sente.
+            </p>
+            <a
+              href="#contato"
+              className="mt-8 inline-block rounded-full bg-[#C9A96E] px-10 py-4 text-sm font-bold tracking-widest text-white transition-all hover:bg-[#B8944A] hover:shadow-xl hover:scale-105"
+            >
+              AGENDE SEU HORÁRIO
+            </a>
+          </FadeUp>
         </div>
       </section>
 
       {/* ===== BENEFÍCIOS DO ATENDIMENTO ONLINE ===== */}
       <section id="beneficios" className="bg-[#FAF8F5] px-5 py-20 sm:px-6 sm:py-28">
         <div className="mx-auto max-w-5xl">
-          <h2 className="mb-12 text-center font-serif text-3xl font-bold sm:text-4xl">Benefícios</h2>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <FadeUp>
+            <h2 className="mb-12 text-center font-serif text-3xl font-bold sm:text-4xl">Benefícios</h2>
+          </FadeUp>
+          <Stagger className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {BENEFITS.map((b, i) => (
-              <div key={i} className="group text-center">
+              <StaggerItem key={i} className="group text-center">
                 <div className="mx-auto mb-4 h-24 w-24 overflow-hidden rounded-full transition-shadow group-hover:shadow-md">
                   <img
                     src={b.src}
@@ -269,18 +280,20 @@ export default function Psicologos() {
                 </div>
                 <h3 className="mb-1 font-serif text-lg font-bold text-[#7A8B6B]">{b.title}</h3>
                 <p className="text-sm leading-relaxed text-[#5C5C5C]">{b.desc}</p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 
       {/* ===== SOBRE MIM ===== */}
       <section id="sobre" className="bg-white px-5 py-20 sm:px-6 sm:py-28">
         <div className="mx-auto max-w-5xl">
-          <h2 className="mb-10 text-center font-serif text-3xl font-bold sm:text-4xl">Sobre Mim</h2>
+          <FadeUp>
+            <h2 className="mb-10 text-center font-serif text-3xl font-bold sm:text-4xl">Sobre Mim</h2>
+          </FadeUp>
           <div className="flex flex-col gap-8 md:flex-row">
-            <div className="flex flex-col gap-4 md:w-5/12">
+            <FadeUp delay={0.1} className="flex flex-col gap-4 md:w-5/12">
               <div className="aspect-[4/5] w-full overflow-hidden rounded-[300px_20px_400px_20px]">
                 <img
                   src="/psicologa/sobre-01.jpg"
@@ -295,8 +308,8 @@ export default function Psicologos() {
                   className="h-full w-full object-cover object-top"
                 />
               </div>
-            </div>
-            <div className="space-y-4 text-sm leading-relaxed text-[#5C5C5C] sm:text-base md:w-7/12">
+            </FadeUp>
+            <FadeUp delay={0.2} className="space-y-4 text-sm leading-relaxed text-[#5C5C5C] sm:text-base md:w-7/12">
               <p>
                 Me chamo Ana Fernandes, sou psicóloga clínica e trabalho com Gestalt-Terapia há mais de 10 anos. Minha jornada começou quando percebi que o que realmente transforma as pessoas não é uma técnica pronta, mas a qualidade da relação que se constrói entre terapeuta e paciente.
               </p>
@@ -312,7 +325,7 @@ export default function Psicologos() {
               >
                 ENTRE EM CONTATO
               </a>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>
@@ -320,28 +333,32 @@ export default function Psicologos() {
       {/* ===== ABORDAGEM ===== */}
       <section id="abordagem" className="bg-[#FAF8F5] px-5 py-20 sm:px-6 sm:py-28">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="font-serif text-3xl font-bold sm:text-4xl">Gestalt-Terapia</h2>
-          <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-[#C9A96E]">ABORDAGEM</p>
-          <div className="mt-8 space-y-4 text-left text-sm leading-relaxed text-[#5C5C5C] sm:text-base">
-            <p>
-              Gestalt-Terapia é uma abordagem humanista que enxerga o ser humano como um todo — não como uma soma de sintomas. Em vez de focar apenas no passado ou no diagnóstico, ela olha pra o que está acontecendo <strong>aqui e agora</strong>: como você se sente, o que está vivendo e o que te impede de seguir em frente.
-            </p>
-            <p>
-              O trabalho é vivencial. Não é só falar sobre o que te incomoda, mas experimentar novas formas de estar no mundo. Aos poucos, você aprende a se ouvir mais, a confiar em si mesma e a fazer escolhas mais conscientes — inclusive a de ser quem você realmente é.
-            </p>
-          </div>
+          <FadeUp>
+            <h2 className="font-serif text-3xl font-bold sm:text-4xl">Gestalt-Terapia</h2>
+            <p className="mt-2 text-xs font-semibold uppercase tracking-widest text-[#C9A96E]">ABORDAGEM</p>
+            <div className="mt-8 space-y-4 text-left text-sm leading-relaxed text-[#5C5C5C] sm:text-base">
+              <p>
+                Gestalt-Terapia é uma abordagem humanista que enxerga o ser humano como um todo — não como uma soma de sintomas. Em vez de focar apenas no passado ou no diagnóstico, ela olha pra o que está acontecendo <strong>aqui e agora</strong>: como você se sente, o que está vivendo e o que te impede de seguir em frente.
+              </p>
+              <p>
+                O trabalho é vivencial. Não é só falar sobre o que te incomoda, mas experimentar novas formas de estar no mundo. Aos poucos, você aprende a se ouvir mais, a confiar em si mesma e a fazer escolhas mais conscientes — inclusive a de ser quem você realmente é.
+              </p>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
       {/* ===== FAQ ===== */}
       <section className="bg-white px-5 py-20 sm:px-6 sm:py-28">
         <div className="mx-auto max-w-3xl">
-          <h2 className="mb-10 text-center font-serif text-3xl font-bold sm:text-4xl">
-            Perguntas Frequentes
-          </h2>
-          <div className="space-y-3">
+          <FadeUp>
+            <h2 className="mb-10 text-center font-serif text-3xl font-bold sm:text-4xl">
+              Perguntas Frequentes
+            </h2>
+          </FadeUp>
+          <Stagger className="space-y-3">
             {FAQ_DATA.map((item, i) => (
-              <div key={i} className="overflow-hidden rounded-xl border border-[#EDE5DC]">
+              <StaggerItem key={i} className="overflow-hidden rounded-xl border border-[#EDE5DC]">
                 <button
                   className="flex w-full items-center justify-between px-5 py-4 text-left text-sm font-semibold transition-colors hover:bg-[#FAF8F5] sm:text-base"
                   onClick={() => setFaqOpen(faqOpen === i ? null : i)}
@@ -358,19 +375,22 @@ export default function Psicologos() {
                     {item.a}
                   </div>
                 )}
-              </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 
       {/* ===== CONTATO ===== */}
       <section id="contato" className="bg-[#FAF8F5] px-5 py-20 sm:px-6 sm:py-28">
         <div className="mx-auto max-w-5xl">
-          <h2 className="mb-10 text-center font-serif text-3xl font-bold sm:text-4xl">Contato</h2>
+          <FadeUp>
+            <h2 className="mb-10 text-center font-serif text-3xl font-bold sm:text-4xl">Contato</h2>
+          </FadeUp>
           <div className="flex flex-col gap-8 lg:flex-row">
             {/* Form */}
-            <form className="flex-1 space-y-4">
+            <FadeUp delay={0.1} className="flex-1">
+            <form className="space-y-4">
               <div>
                 <label className="mb-1 block text-xs font-semibold uppercase tracking-wider text-[#5C5C5C]">Nome</label>
                 <input
@@ -420,9 +440,10 @@ export default function Psicologos() {
                 ENVIAR
               </button>
             </form>
+            </FadeUp>
 
             {/* Info */}
-            <div className="space-y-5 lg:w-4/12">
+            <FadeUp delay={0.2} className="space-y-5 lg:w-4/12">
               <div className="rounded-2xl bg-white p-6 shadow-sm">
                 <h3 className="mb-4 font-serif text-lg font-bold text-[#7A8B6B]">Informações de contato</h3>
                 <div className="space-y-3 text-sm text-[#5C5C5C]">
@@ -457,7 +478,7 @@ export default function Psicologos() {
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeUp>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import {
   Wrench,
   Zap,
@@ -16,7 +17,9 @@ import {
   MessageCircle,
   Star,
   ChevronRight,
+  type LucideIcon,
 } from "lucide-react";
+import { FadeUp, Stagger, StaggerItem, CounterUp } from "@/components/animations";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import {
   Carousel,
@@ -72,11 +75,19 @@ const EQUIPE = [
   },
 ] as const;
 
-const DIFERENCIAIS = [
+type Diferencial = {
+  icon: LucideIcon;
+  title: string;
+  count?: number;
+  desc: string | readonly (string | number)[];
+};
+
+const DIFERENCIAIS: Diferencial[] = [
   {
     icon: Calendar,
-    title: "20 anos de estrada",
-    desc: "Desde 2005 atendendo a região. Mais de 10 mil carros reparados.",
+    count: 20,
+    title: "anos de estrada",
+    desc: ["Desde 2005 atendendo a região. Mais de ", 10, " mil carros reparados."],
   },
   {
     icon: DollarSign,
@@ -93,7 +104,7 @@ const DIFERENCIAIS = [
     title: "Diagnóstico eletrônico",
     desc: "Scanner profissional que identifica problemas com precisão.",
   },
-] as const;
+];
 
 const DEPOIMENTOS = [
   {
@@ -174,24 +185,35 @@ export default function Oficinas() {
   return (
     <main>
       {/* WhatsApp flutuante */}
-      <a
+      <motion.a
         href="#"
+        initial={{ scale: 0, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ delay: 1.2, type: "spring", stiffness: 260, damping: 18 }}
         className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all hover:scale-110 hover:shadow-xl"
         aria-label="Falar no WhatsApp"
       >
         <MessageCircle size={26} />
-      </a>
+      </motion.a>
 
       {/* HERO */}
       <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden bg-slate-900">
-        <div
+        <motion.div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: "url(/oficina/hero.jpg)" }}
+          initial={{ scale: 1.15 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 2, ease: "easeOut" }}
         >
           <div className="absolute inset-0 bg-slate-900/80" />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent" />
-        </div>
-        <div className="absolute left-0 top-0 z-10 flex w-full items-center justify-between px-6 py-5">
+        </motion.div>
+        <motion.div
+          className="absolute left-0 top-0 z-10 flex w-full items-center justify-between px-6 py-5"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <span className="text-lg font-bold tracking-tight text-white">
             <span className="text-red-400">Mec.</span>São Jorge
           </span>
@@ -206,36 +228,42 @@ export default function Oficinas() {
               Local
             </a>
           </nav>
-        </div>
+        </motion.div>
         <div className="relative z-10 mx-auto max-w-3xl px-5 text-center text-white">
-          <span className="mb-5 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-red-200">
-            Mecânica de confiança desde 2005
-          </span>
+          <FadeUp delay={0.3}>
+            <span className="mb-5 inline-block rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-red-200">
+              Mecânica de confiança desde 2005
+            </span>
+          </FadeUp>
           <h1 className="mb-4 text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl lg:text-7xl">
             Auto Mecânica
             <br />
             <span className="text-red-400">São Jorge</span>
           </h1>
-          <p className="mx-auto mb-10 max-w-xl text-base text-white/80 sm:text-lg">
-            Mecânica geral e elétrica automotiva em Pereiro, CE. Carros e motos.
-            Orçamento sem compromisso. Atendimento rápido e transparente.
-          </p>
-          <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 rounded-sm bg-red-500 px-7 py-3.5 text-base font-bold text-white transition-all hover:bg-red-400"
-            >
-              <MessageCircle size={20} />
-              Falar no WhatsApp
-            </a>
-            <a
-              href="#agendar"
-              className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-7 py-3.5 text-base font-bold text-white transition-all hover:bg-white/10"
-            >
-              Agendar serviço
-              <ChevronRight size={18} />
-            </a>
-          </div>
+          <FadeUp delay={0.5}>
+            <p className="mx-auto mb-10 max-w-xl text-base text-white/80 sm:text-lg">
+              Mecânica geral e elétrica automotiva em Pereiro, CE. Carros e motos.
+              Orçamento sem compromisso. Atendimento rápido e transparente.
+            </p>
+          </FadeUp>
+          <FadeUp delay={0.65}>
+            <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 rounded-sm bg-red-500 px-7 py-3.5 text-base font-bold text-white transition-all hover:bg-red-400"
+              >
+                <MessageCircle size={20} />
+                Falar no WhatsApp
+              </a>
+              <a
+                href="#agendar"
+                className="inline-flex items-center gap-2 rounded-sm border border-white/30 px-7 py-3.5 text-base font-bold text-white transition-all hover:bg-white/10"
+              >
+                Agendar serviço
+                <ChevronRight size={18} />
+              </a>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
@@ -245,113 +273,123 @@ export default function Oficinas() {
         className="bg-white px-5 py-20 dark:bg-neutral-950"
       >
         <div className="mx-auto max-w-5xl">
-          <div className="mb-14">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Nossos serviços
-            </h2>
-            <p className="mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
-              De revisão simples a diagnósticos complexos. Seu carro em boas
-              mãos.
-            </p>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2">
+          <FadeUp>
+            <div className="mb-14">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Nossos serviços
+              </h2>
+              <p className="mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
+                De revisão simples a diagnósticos complexos. Seu carro em boas
+                mãos.
+              </p>
+            </div>
+          </FadeUp>
+          <Stagger className="grid gap-5 sm:grid-cols-2">
             {SERVICOS.map((s) => {
               const Icon = s.icon;
               return (
-                <div
-                  key={s.title}
-                  className="border-l-4 border-red-600 bg-gray-50 pl-5 pr-6 py-5 dark:bg-neutral-900"
-                >
-                  <span className="mb-3 flex h-10 w-10 items-center justify-center bg-red-600 text-white">
-                    <Icon size={20} />
-                  </span>
-                  <h3 className="mb-1.5 text-lg font-bold">{s.title}</h3>
-                  <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-                    {s.desc}
-                  </p>
-                </div>
+                <StaggerItem key={s.title}>
+                  <div className="border-l-4 border-red-600 bg-gray-50 pl-5 pr-6 py-5 dark:bg-neutral-900">
+                    <span className="mb-3 flex h-10 w-10 items-center justify-center bg-red-600 text-white">
+                      <Icon size={20} />
+                    </span>
+                    <h3 className="mb-1.5 text-lg font-bold">{s.title}</h3>
+                    <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">
+                      {s.desc}
+                    </p>
+                  </div>
+                </StaggerItem>
               );
             })}
-          </div>
+          </Stagger>
         </div>
       </section>
 
       {/* EQUIPE */}
       <section className="bg-gray-50 px-5 py-20 dark:bg-neutral-900">
         <div className="mx-auto max-w-4xl">
-          <div className="mb-14">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Conheça nossa equipe
-            </h2>
-            <p className="mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
-              Quem cuida do seu carro com experiência e dedicação.
-            </p>
-          </div>
-          <div className="mx-auto grid max-w-2xl grid-cols-2 gap-6 sm:gap-8">
+          <FadeUp>
+            <div className="mb-14">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Conheça nossa equipe
+              </h2>
+              <p className="mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
+                Quem cuida do seu carro com experiência e dedicação.
+              </p>
+            </div>
+          </FadeUp>
+          <Stagger className="mx-auto grid max-w-2xl grid-cols-2 gap-6 sm:gap-8">
             {EQUIPE.slice(0, 2).map((p) => (
-              <div key={p.nome} className="text-center">
-                <div className="mx-auto mb-4 h-28 w-28 overflow-hidden rounded-full">
-                  <Avatar className="h-full w-full">
-                    <AvatarImage
-                      src={p.img}
-                      alt={p.nome}
-                      className="aspect-square h-full w-full object-cover"
-                    />
-                    <AvatarFallback className={`text-2xl text-white ${p.bg}`}>
-                      {p.nome
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </AvatarFallback>
-                  </Avatar>
+              <StaggerItem key={p.nome}>
+                <div className="text-center">
+                  <div className="mx-auto mb-4 h-28 w-28 overflow-hidden rounded-full">
+                    <Avatar className="h-full w-full">
+                      <AvatarImage
+                        src={p.img}
+                        alt={p.nome}
+                        className="aspect-square h-full w-full object-cover"
+                      />
+                      <AvatarFallback className={`text-2xl text-white ${p.bg}`}>
+                        {p.nome
+                          .split(" ")
+                          .map((n) => n[0])
+                          .join("")}
+                      </AvatarFallback>
+                    </Avatar>
+                  </div>
+                  <h3 className="text-lg font-bold">{p.nome}</h3>
+                  <p className="text-sm text-red-600 dark:text-red-400">
+                    {p.funcao}
+                  </p>
                 </div>
-                <h3 className="text-lg font-bold">{p.nome}</h3>
-                <p className="text-sm text-red-600 dark:text-red-400">
-                  {p.funcao}
-                </p>
-              </div>
+              </StaggerItem>
             ))}
-          </div>
-          <div className="mt-6 flex justify-center sm:mt-8">
-            {EQUIPE.slice(2, 3).map((p) => (
-              <div key={p.nome} className="text-center">
-                <div className="mx-auto mb-4 h-28 w-28 overflow-hidden rounded-full">
-                  <Avatar className="h-full w-full">
-                    <AvatarImage
-                      src={p.img}
-                      alt={p.nome}
-                      className="aspect-square h-full w-full object-cover"
-                    />
-                    <AvatarFallback className={`text-2xl text-white ${p.bg}`}>
-                      {p.nome
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </AvatarFallback>
-                  </Avatar>
+          </Stagger>
+          <FadeUp delay={0.15}>
+            <div className="mt-6 flex justify-center sm:mt-8">
+              {EQUIPE.slice(2, 3).map((p) => (
+                <div key={p.nome} className="text-center">
+                  <div className="mx-auto mb-4 h-28 w-28 overflow-hidden rounded-full">
+                    <Avatar className="h-full w-full">
+                      <AvatarImage
+                        src={p.img}
+                        alt={p.nome}
+                        className="aspect-square h-full w-full object-cover"
+                      />
+                      <AvatarFallback className={`text-2xl text-white ${p.bg}`}>
+                        {p.nome
+                          .split(" ")
+                          .map((n) => n[0])
+                          .join("")}
+                      </AvatarFallback>
+                    </Avatar>
+                  </div>
+                  <h3 className="text-lg font-bold">{p.nome}</h3>
+                  <p className="text-sm text-red-600 dark:text-red-400">
+                    {p.funcao}
+                  </p>
                 </div>
-                <h3 className="text-lg font-bold">{p.nome}</h3>
-                <p className="text-sm text-red-600 dark:text-red-400">
-                  {p.funcao}
-                </p>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </FadeUp>
         </div>
       </section>
 
       {/* GALERIA DE FOTOS */}
       <section className="bg-white px-5 py-20 dark:bg-neutral-950">
         <div className="mx-auto max-w-4xl">
-          <div className="mb-14 text-center">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Nosso Espaço
-            </h2>
-            <p className="mx-auto mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
-              Veja nossa estrutura e conheça o trabalho da São Jorge.
-            </p>
-          </div>
-          <div className="relative mx-auto max-w-3xl">
+          <FadeUp>
+            <div className="mb-14 text-center">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Nosso Espaço
+              </h2>
+              <p className="mx-auto mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
+                Veja nossa estrutura e conheça o trabalho da São Jorge.
+              </p>
+            </div>
+          </FadeUp>
+          <FadeUp delay={0.15}>
+            <div className="relative mx-auto max-w-3xl">
             <Carousel setApi={setGaleriaApi} className="w-full">
               <CarouselContent>
                 {GALERIA.map((foto) => (
@@ -390,22 +428,26 @@ export default function Oficinas() {
             <p className="mt-2 text-center text-xs text-gray-400">
               {galeriaSlide + 1} / {GALERIA.length}
             </p>
-          </div>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
       {/* VÍDEOS */}
       <section className="bg-gray-50 px-5 py-20 dark:bg-neutral-900">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-14 text-center">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Mão na massa
-            </h2>
-            <p className="mx-auto mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
-              Veja na prática como trabalhamos.
-            </p>
-          </div>
-          <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden">
+          <FadeUp>
+            <div className="mb-14 text-center">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Mão na massa
+              </h2>
+              <p className="mx-auto mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
+                Veja na prática como trabalhamos.
+              </p>
+            </div>
+          </FadeUp>
+          <FadeUp delay={0.1}>
+            <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden">
             {["jJPu2-ViTeg", "ZZJYFy24ZnE", "-m3EtUHW570", "vt6lMotOjXk"].map(
               (id) => (
                 <div key={id} className="shrink-0 snap-center">
@@ -422,57 +464,75 @@ export default function Oficinas() {
                 </div>
               ),
             )}
-          </div>
+            </div>
+          </FadeUp>
         </div>
       </section>
 
       {/* DIFERENCIAIS */}
       <section className="bg-slate-900 px-5 py-20">
         <div className="mx-auto max-w-4xl">
-          <div className="mb-14">
-            <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-              Por que a São Jorge?
-            </h2>
-            <p className="mt-3 max-w-lg text-base text-red-200/70">
-              4 motivos pra confiar seu carro à nossa equipe.
-            </p>
-          </div>
-          <div className="grid gap-5 sm:grid-cols-2">
+          <FadeUp>
+            <div className="mb-14">
+              <h2 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                Por que a São Jorge?
+              </h2>
+              <p className="mt-3 max-w-lg text-base text-red-200/70">
+                4 motivos pra confiar seu carro à nossa equipe.
+              </p>
+            </div>
+          </FadeUp>
+          <Stagger className="grid gap-5 sm:grid-cols-2">
             {DIFERENCIAIS.map((d) => {
               const Icon = d.icon;
               return (
-                <div
-                  key={d.title}
-                  className="border border-white/10 bg-white/5 px-6 py-6 transition-colors hover:bg-white/10"
-                >
-                  <span className="mb-4 flex h-10 w-10 items-center justify-center bg-red-500 text-white">
-                    <Icon size={20} />
-                  </span>
-                  <h3 className="mb-1.5 text-lg font-bold text-white">
-                    {d.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-red-100/70">
-                    {d.desc}
-                  </p>
-                </div>
+                <StaggerItem key={d.title}>
+                  <div className="border border-white/10 bg-white/5 px-6 py-6 transition-colors hover:bg-white/10">
+                    <span className="mb-4 flex h-10 w-10 items-center justify-center bg-red-500 text-white">
+                      <Icon size={20} />
+                    </span>
+                    <h3 className="mb-1.5 text-lg font-bold text-white">
+                      {d.count !== undefined && (
+                        <span className="font-serif text-2xl">
+                          <CounterUp to={d.count} />
+                        </span>
+                      )}{" "}
+                      {d.title}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-red-100/70">
+                      {Array.isArray(d.desc)
+                        ? d.desc.map((part, i) =>
+                            typeof part === "number" ? (
+                              <CounterUp key={i} to={part} />
+                            ) : (
+                              <span key={i}>{part}</span>
+                            )
+                          )
+                        : d.desc}
+                    </p>
+                  </div>
+                </StaggerItem>
               );
             })}
-          </div>
+          </Stagger>
         </div>
       </section>
 
       {/* AGENDE */}
       <section id="agendar" className="bg-white px-5 py-20 dark:bg-neutral-950">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-14">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Agende seu serviço
-            </h2>
-            <p className="mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
-              Preencha os dados. A gente confirma o horário por WhatsApp.
-            </p>
-          </div>
-          <div className="grid items-start gap-10 lg:grid-cols-2">
+          <FadeUp>
+            <div className="mb-14">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Agende seu serviço
+              </h2>
+              <p className="mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
+                Preencha os dados. A gente confirma o horário por WhatsApp.
+              </p>
+            </div>
+          </FadeUp>
+          <FadeUp delay={0.1}>
+            <div className="grid items-start gap-10 lg:grid-cols-2">
             {/* Formulário */}
             <div className="border border-gray-200 bg-white px-6 py-7 dark:border-neutral-800 dark:bg-neutral-950">
               <h3 className="mb-6 text-xl font-bold">Dados do agendamento</h3>
@@ -551,27 +611,30 @@ export default function Oficinas() {
               />
             </div>
           </div>
+          </FadeUp>
         </div>
       </section>
 
       {/* DEPOIMENTOS */}
       <section className="bg-gray-50 px-5 py-20 dark:bg-neutral-900">
         <div className="mx-auto max-w-3xl">
-          <div className="mb-14 text-center">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Quem já conhece, confia
-            </h2>
-            <p className="mx-auto mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
-              O que nossos clientes falam da São Jorge.
-            </p>
-          </div>
-          <div className="space-y-6">
+          <FadeUp>
+            <div className="mb-14 text-center">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Quem já conhece, confia
+              </h2>
+              <p className="mx-auto mt-3 max-w-lg text-base text-gray-500 dark:text-gray-400">
+                O que nossos clientes falam da São Jorge.
+              </p>
+            </div>
+          </FadeUp>
+          <Stagger className="space-y-6">
             {DEPOIMENTOS.map((d) => (
-              <div
-                key={d.nome}
-                className="border-l-4 border-red-600 bg-white px-6 py-6 dark:bg-neutral-950"
-              >
-                <div className="mb-3 flex items-center gap-1">
+              <StaggerItem key={d.nome}>
+                <div
+                  className="border-l-4 border-red-600 bg-white px-6 py-6 dark:bg-neutral-950"
+                >
+                  <div className="mb-3 flex items-center gap-1">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star
                       key={i}
@@ -588,21 +651,25 @@ export default function Oficinas() {
                   <span className="text-gray-400"> &middot; </span>
                   <span className="text-gray-500">{d.carro}</span>
                 </div>
-              </div>
+                </div>
+              </StaggerItem>
             ))}
-          </div>
+          </Stagger>
         </div>
       </section>
 
       {/* ONDE ESTAMOS + MAPA */}
       <section id="local" className="bg-white px-5 py-20 dark:bg-neutral-950">
         <div className="mx-auto max-w-5xl">
-          <div className="mb-14">
-            <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
-              Onde estamos
-            </h2>
-          </div>
-          <div className="grid gap-10 lg:grid-cols-2">
+          <FadeUp>
+            <div className="mb-14">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl">
+                Onde estamos
+              </h2>
+            </div>
+          </FadeUp>
+          <FadeUp delay={0.1}>
+            <div className="grid gap-10 lg:grid-cols-2">
             <div className="space-y-6">
               <div>
                 <div className="mb-2 flex items-center gap-2 text-red-600">
@@ -664,27 +731,30 @@ export default function Oficinas() {
               />
             </div>
           </div>
+          </FadeUp>
         </div>
       </section>
 
       {/* CTA FINAL */}
       <section className="bg-slate-900 px-5 py-20 text-center">
-        <div className="mx-auto max-w-2xl">
-          <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-            Seu carro merece um mecânico de confiança
-          </h2>
-          <p className="mb-10 text-base text-white/70">
-            Não deixe seu carro na mão de qualquer um. Fala com a gente no
-            WhatsApp e a gente resolve.
-          </p>
-          <a
-            href="#"
-            className="inline-flex items-center gap-2 rounded-sm bg-red-500 px-8 py-4 text-base font-bold text-white transition-all hover:bg-red-400"
-          >
-            <MessageCircle size={20} />
-            Falar no WhatsApp agora
-          </a>
-        </div>
+        <FadeUp>
+          <div className="mx-auto max-w-2xl">
+            <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+              Seu carro merece um mecânico de confiança
+            </h2>
+            <p className="mb-10 text-base text-white/70">
+              Não deixe seu carro na mão de qualquer um. Fala com a gente no
+              WhatsApp e a gente resolve.
+            </p>
+            <a
+              href="#"
+              className="inline-flex items-center gap-2 rounded-sm bg-red-500 px-8 py-4 text-base font-bold text-white transition-all hover:bg-red-400"
+            >
+              <MessageCircle size={20} />
+              Falar no WhatsApp agora
+            </a>
+          </div>
+        </FadeUp>
       </section>
 
       {/* Footer */}
