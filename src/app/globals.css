@@ -58,4 +58,17 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .font-heading {
+    font-family: var(--font-poppins);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

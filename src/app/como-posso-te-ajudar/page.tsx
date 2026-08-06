@@ -62,7 +62,7 @@ const CASES = [
     title: "Pra psicólogos(as)",
     description:
       "Página que transmite confiança, com especialidades e um caminho simples pra agendar a primeira consulta.",
-    href: "/psicologos",
+    href: "/psijulianaribeiro",
     img: "/psicologa/hero.jpg",
     gradient: "from-purple-500 to-pink-600",
   },
